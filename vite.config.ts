@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: 'public/index.html', // ✅ tell Vite where to start
+    },
   },
   resolve: {
     alias: {
